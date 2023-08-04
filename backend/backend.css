@@ -106,6 +106,7 @@ button{
     width: 100%;
     height: fit-content;
     font-weight: 700;
+    color:#000000;
 }
 .buttons:hover:not([disabled]){
     background-color: #ccc;
