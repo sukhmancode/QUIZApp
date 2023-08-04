@@ -122,7 +122,7 @@ button{
     background: #ff9393;
     color:#fff;
     font-weight: 700;
-}@media screen and (max-width:340px){
+}@media screen and (max-width:450px){
     html,body{
         height: 100%;
         width: 100%;
