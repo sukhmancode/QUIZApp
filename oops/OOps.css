@@ -120,7 +120,7 @@ button{
     font-weight: 700;
 }
 .Incorrect{
-    background: #ff9393;
+    background: rgba(255, 0, 10);
     color:#fff;
     font-weight: 700;
 }
