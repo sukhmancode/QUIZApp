@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1.8rem;
+    background-color: #f1f5f8;
+}
+
+p{
+    font-size: 1.4rem;
+}
+nav{
+    text-align: center;
+    padding-block: 2rem;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 1px 0 #eee;
+}
+.container{
+    padding-inline: 3rem;
+    display: flex;
+    margin-block:2rem;
+    flex-direction: column;
+    gap:2rem;
+}
+.cards{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+.cards.active{
+    display: none;
+}
+.card{
+    min-width:40rem;
+    background-color: #fff;
+    border-radius: 4px;
+ display: flex;
+    flex-direction: column;
+    padding:2rem;
+    gap:1rem;
+    box-shadow: 0 0 4px #ccc;
+    pointer-events: none;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px #ccc;
+}
+.description{
+    align-items: center;
+    display: flex;
+    gap:2rem;
+}
+.categories{
+    align-items: center;
+    display: flex;
+    gap:0.5rem;
+}
+.green{
+    padding:0.3rem;
+    border:0.2px solid #0bc279;
+    color:#0bc279;
+    border-radius: 0.5rem;
+}
+.category{
+    border-radius: 8px;
+    padding:0.6rem;
+    text-transform: uppercase;
+    border: 0.2px solid #aeb9c6;
+    color:#aeb9c6;
+margin-left: 6rem;
+
+}
+.category:hover{
+    cursor: pointer;
+    color:#0f2830;
+    border: 0.2px solid #0f2830;
+}
+.cards{
+    display: flex;
+    gap:3rem;
+}
+.form-section{
+    flex-direction: column;
+    gap:2rem;
+    display: none;
+}
+.form-section.active{
+    display: flex;
+}
+.form-section p{
+    font-size: 1.8rem;
+}
+.form-section h2{
+    font-size: 1.9rem;
+}
+.quiz-head,.instructions,.fill-section{
+    padding:2rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.fill-section{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding:1rem;
+}
+#start{
+    margin-top:1rem;    
+    width: fit-content;
+    padding:1rem;
+    border: none;
+    outline: none;
+    background-color:#0bc279 ;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.answer-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.topic{
+    pointer-events: none;
+}
+.ex{
+    pointer-events: all;
+}
+@media screen and (max-width:400px){
+    html{
+        font-size: 55%;
+    }
+    html,body{
+        padding:0;
+        margin:0;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    .container{
+        padding-inline:1rem;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:320px){
+    html{
+        font-size: 45%;
+    }
+    
+}

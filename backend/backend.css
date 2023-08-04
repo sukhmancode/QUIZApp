@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f8;
+    font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1.8rem;
+  color:#0f2830;
+  align-items: center;
+  justify-content: center;
+}.container{
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    
+}
+label{
+    margin-left:1rem;
+    font-size: 2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+li{
+    list-style: none;
+}
+.question1{
+    padding:2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap:4rem;
+    padding-inline: 10rem;
+    padding-block: 2rem;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 0 #eee;
+}
+#answer{
+    text-align: left;
+}
+
+.btn{
+    font-size: 1.7rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline:none;
+    background-color: #0bc279;
+    color:#fff;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.submit{
+    text-align: center;
+}
+.q1-head{
+    display: flex;
+    align-items:flex-end;
+    justify-content: end;
+  
+}
+.q1-head p{
+    border-radius: 5px;
+    padding:0.5rem;
+font-size: 1.4rem;
+    border: 1px solid #0bc279;
+    opacity: 0.6;
+}
+.q1-head p:hover{
+opacity: 1;
+}
+button{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.buttons{
+   
+    padding:1rem;
+    margin-block:0.7rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.6rem;
+    width: 100%;
+    height: fit-content;
+    font-weight: 700;
+}
+.buttons:hover:not([disabled]){
+    background-color: #ccc;
+    color:#fff;
+}
+.buttons:disabled{
+    cursor: no-drop;
+}
+.correct{
+    background: #0bc279;
+    color:#fff;
+    font-weight: 700;
+}
+.Incorrect{
+    background: #ff9393;
+    color:#fff;
+    font-weight: 700;
+}
+@media screen and (max-width:340px){
+    html,body{
+        height: 100%;
+        width: 100%;
+        padding:0;
+        margin: 0;
+        overflow-x: hidden;
+   
+    }
+    html{
+        font-size: 55%;
+    }
+nav{
+    padding-inline: 1rem;
+}
+.container{
+    width:100%;
+    padding:0.5rem;
+}
+    
+}
