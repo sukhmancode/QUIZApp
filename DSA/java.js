@@ -109,6 +109,7 @@ function selectanswer(e){
         button.disabled=true;
     })
     submit.style.display="inline"
+    submit.innerHTML=`Next`
 }
 
 function reset(){
@@ -126,14 +127,15 @@ function showScore(){
         question.innerHTML=`You Scored ${score} out of ${quizDB.length}
 `
         const p=document.createElement('p');
-        p.textContent="Better Luck Next Time! 🤔"
+        p.textContent="Better Luck Next Time! 😀"
         question.appendChild(p);
-        submit.innerHTML=   `Solve Again`
+      
         submit.style.display="inline"
+        submit.innerHTML= `Solve Again`
     }else{
         question.innerHTML=`You Scored ${score} out of ${quizDB.length} `
         const p=document.createElement('p');
-        p.textContent=" Wow! Such a great Score😀"
+        p.textContent=" Wow! Such a great Score 👌"
         question.appendChild(p);
         submit.style.display="inline"
     }
