@@ -1,5 +1,10 @@
 
+const question=document.querySelector('.question');
+const submit=document.querySelector('.btn');
+const Answers=document.querySelector('#answer');;
 
+let currentQuestionIdx=0;
+let score=0;
 function startQuiz(){
     currentQuestionIdx=0;
     score=0;
