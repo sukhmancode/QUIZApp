@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 *{
     margin:0;
     padding:0;
@@ -49,12 +50,22 @@ li{
 nav{
     display: flex;
     align-items: center;
-    gap:4rem;
-    padding-inline: 10rem;
+    justify-content: center;
+  gap:1.5rem;
     padding-block: 2rem;
     background-color: #fff;
     width: 100%;
-    box-shadow: 0 2px 0 #eee;
+    box-shadow: 0 1px 0 #eee;
+    font-family: 'Saira Stencil One', cursive;
+}
+nav img{
+    width: 5rem;
+}
+nav h1{
+    transform: translateY(0.3rem);
+}
+.quiz-head{
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 #answer{
     text-align: left;
@@ -103,7 +114,7 @@ button{
     text-align: left;
     font-size: 1.6rem;
     width: 100%;
-    height: 4rem;
+    height: fit-content;
     font-weight: 700;
     color:#000000;
 }
