@@ -36,9 +36,7 @@ nav img{
 nav h1{
     transform: translateY(0.3rem);
 }
-.quiz-head{
-    font-family: 'Hanken Grotesk', sans-serif;
-}
+
 .container{
     padding-inline: 3rem;
     display: flex;
