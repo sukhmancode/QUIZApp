@@ -11,5 +11,5 @@ CardSection.forEach((card)=>{
     })
 })
 submit.addEventListener('click',(e)=>{
-    submit.setAttribute('href',"htm"+ "/"+Example.innerHTML +".html")
+    submit.setAttribute('href',"html"+ "/"+Example.innerHTML +".html")
 })

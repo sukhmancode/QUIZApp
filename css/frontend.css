@@ -64,7 +64,7 @@ nav img{
 nav h1{
     transform: translateY(0.3rem);
 }
-.quiz-head{
+.quiz-topic{
     font-family: 'Hanken Grotesk', sans-serif;
 }
 #answer{

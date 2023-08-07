@@ -1,3 +1,6 @@
+const quizTitle=document.querySelector('.main-title')
+document.querySelector('.quiz-topic').textContent=` Example quiz for ${quizTitle.innerHTML}`;
+
 
 const question=document.querySelector('.question');
 const submit=document.querySelector('.btn');
