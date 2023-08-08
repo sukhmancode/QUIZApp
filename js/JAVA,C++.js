@@ -1,4 +1,4 @@
-const quizDB=[
+const javaquizDB=[
     {
         question:"How are String represented in memory in C++?",
         ans:[

@@ -1,5 +1,4 @@
-const MainDB=[
-    quizDB=[
+const FrontendquizDB=[
         {
             question:"Who is making the Web standards?",
             ans:[
@@ -71,9 +70,9 @@ const MainDB=[
     
         }
       
-    ],
+    ];
    
-]
+
 
 
 

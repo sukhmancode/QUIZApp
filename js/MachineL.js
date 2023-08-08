@@ -1,4 +1,4 @@
-const quizDB=[
+const PythonquizDB=[
     {
         question:"What is machine learning ?",
         ans:[

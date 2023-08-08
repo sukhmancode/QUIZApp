@@ -1,4 +1,4 @@
-const quizDB=[
+const BackendquizDB=[
     {
         question:"The Application programming interfaces (API)",
         ans:[

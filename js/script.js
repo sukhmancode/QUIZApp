@@ -1,15 +1,22 @@
-const CardSection=document.querySelectorAll('.card');
-const formSection=document.querySelector('.form-section');
-const Card=document.querySelector('.cards');
-const Example=document.querySelector('.example');
-const submits =document.getElementById('start');
+const CardSection = document.querySelectorAll('.card');
+const formSection = document.querySelector('.form-section');
+const Card = document.querySelector('.cards');
+const Example = document.querySelector('.example');
+const submits = document.getElementById('start');
+export const topic=document.querySelectorAll('.topic');
+
+
+
+
+
 CardSection.forEach((card)=>{
     card.addEventListener('click',(e)=>{
         Card.classList.toggle('active');
         formSection.classList.add('active');
         Example.textContent=e.target.querySelector('.topic').textContent;
+        submits.addEventListener('click',()=>{
+            submits.setAttribute('href',"html"+ "/"+"Topics" +".html")
+        })
+        
     })
-})
-submits.addEventListener('click',(e)=>{
-    submits.setAttribute('href',"html"+ "/"+Example.innerHTML +".html")
 })

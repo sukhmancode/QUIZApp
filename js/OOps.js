@@ -1,4 +1,4 @@
-const quizDB=[
+const OOPsquizDB=[
     {
         question:"What is the implicit return type of constructor?",
         ans:[

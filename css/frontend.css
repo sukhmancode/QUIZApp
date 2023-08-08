@@ -21,8 +21,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
-    
+   max-width: 600px;
 }
 label{
     margin-left:1rem;
@@ -117,7 +116,10 @@ button{
     background: rgba(255, 0, 10);
     color:#fff;
     font-weight: 700;
-}@media screen and (max-width:450px){
+}.questions-sec{
+    max-width: 600px;
+}
+@media screen and (max-width:450px){
     html,body{
         height: 100%;
         width: 100%;

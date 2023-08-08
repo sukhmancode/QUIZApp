@@ -145,6 +145,12 @@ input[type="text"]{
 .ex{
     pointer-events: all;
 }
+.questions-sec{
+    display: none;
+}
+.questions-sec.active{
+    display: flex;
+}
 @media screen and (max-width:400px){
     html{
         font-size: 55%;
