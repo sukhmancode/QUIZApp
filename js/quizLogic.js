@@ -1,5 +1,7 @@
 const quizTitle=document.querySelector('.main-title')
-document.querySelector('.quiz-topic').textContent=` Example quiz for ${quizTitle.innerHTML}`;
+const windowTitle=document.querySelector('.window-title');
+quizTitle.textContent=windowTitle.textContent;
+document.querySelector('.quiz-topic').textContent=` Example quiz for ${windowTitle.innerHTML}`;
 
 
 const question=document.querySelector('.question');
@@ -8,13 +10,13 @@ const Answers=document.querySelector('#answer');;
 
 let currentQuestionIdx=0;
 let score=0;
-function startQuiz(){
+const startQuiz=()=>{
     currentQuestionIdx=0;
     score=0;
 showQuestion();
 }
 
-function showQuestion(){
+const showQuestion = () =>{
     reset()
     let currentQuestion=quizDB[currentQuestionIdx];
     let questionNo=currentQuestionIdx+1;
@@ -32,14 +34,14 @@ function showQuestion(){
 
 
 }
-function reset(){
+const reset = () =>{
     submit.style.display="none"
     while(Answers.firstChild){
         Answers.removeChild(Answers.firstChild)
     }
 }
 
-function selectanswer(e){
+const selectanswer=(e) =>{
     let selectedBtn=e.target;
    const isCorrect= selectedBtn.dataset.correct==="true";
    if(isCorrect){
@@ -57,7 +59,8 @@ function selectanswer(e){
     submit.style.display="inline"
     submit.innerHTML=`Next`
 }
-function showScore(){
+
+const showScore = ()=>{
     reset();
     document.querySelector('.title').style.display="none";
     question.innerHTML=`You Scored ${score} out of ${quizDB.length}`
@@ -78,7 +81,7 @@ function showScore(){
         submit.style.display="inline"
     }
 }
-function handleClick(){
+const handleClick=()=>{
     currentQuestionIdx++;
     if(currentQuestionIdx < quizDB.length){
         showQuestion();

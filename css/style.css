@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 *{
     margin:0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
 }
 html{
@@ -15,29 +13,11 @@ body{
   font-size: 1.8rem;
     background-color: #f1f5f8;
 }
-
 p{
     font-size: 1.4rem;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  gap:1.5rem;
-    padding-block: 2rem;
-    background-color: #fff;
-    width: 100%;
-    box-shadow: 0 1px 0 #eee;
-    font-family: 'Saira Stencil One', cursive;
-}
-nav img{
-    width: 5rem;
-}
-nav h1{
-    transform: translateY(0.3rem);
-}
-
 .container{
+    width: 100%;
     padding-inline: 3rem;
     display: flex;
     margin-block:2rem;
