@@ -6,11 +6,7 @@ const QuizTopic=document.querySelector('.quiz-topic')
 const windowTitle=document.querySelector('.window')
 const greenTitle=document.querySelector('.title');
 
-topic.forEach(top=>{
-    top.addEventListener('click',()=>{
-      
-    })
-})
+
 
 windowTitle.textContent="Frontend"
 
