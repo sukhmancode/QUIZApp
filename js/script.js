@@ -18,7 +18,7 @@ CardSection.forEach((card)=>{
         formSection.classList.add('active');
         const selected=e.target.querySelector('.topic').textContent;
         Example.textContent=selected;
-        windowTitle.innerHTML=selected;
+      
        
         submits.addEventListener('click',()=>{
             formSection.classList.remove('active')
@@ -41,7 +41,7 @@ CardSection.forEach((card)=>{
         "MachineL":PythonquizDB, 
         "OOPs":OOPsquizDB
     
-    };
+    }
     
     let currentQuestionIdx=0;
     let score=0;
