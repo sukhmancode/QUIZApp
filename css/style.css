@@ -5,15 +5,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    padding-block: 2rem;
+  gap: 2rem;
+    padding-block: 1.5rem;
     background-color: #fff;
     width: 100%;
     box-shadow: 0 1px 0 #eee;
     font-family: 'Saira Stencil One', cursive;
 }
 nav img{
-    width: 5rem;
+    width: 4rem;
 }
 nav h1{
     transform: translateY(0.3rem);
@@ -24,7 +24,7 @@ nav h1{
     box-sizing: border-box;
 }
 html{
-    font-size: 60.5%;
+    font-size: 62.5%;
 }
 body{
     display: flex;
@@ -40,12 +40,11 @@ p{
     width: 100%;
     padding-inline: 3rem;
     display: flex;
-    margin-block:2rem;
+    
     flex-direction: column;
     gap:2rem;
 }
 .cards{
-    
     align-items: center;
     justify-content: center;
     display: flex;
@@ -60,14 +59,13 @@ p{
     min-width:40rem;
     background-color: #fff;
     border-radius: 4px;
- display: flex;
+    display: flex;
     flex-direction: column;
     padding:2rem;
     gap:1rem;
     box-shadow: 0 0 4px #ccc;
     pointer-events: none;
 }
-
 .card:hover{
     cursor: pointer;
     box-shadow: 0 0 20px #ccc;
@@ -174,10 +172,10 @@ input[type="text"]{
 }
 @media screen and (max-width:400px){
     nav{
-        transform: translateY(6rem);
+        transform: translateY(2rem);
     }
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
     html,body{
         padding:0;
@@ -187,7 +185,7 @@ input[type="text"]{
         width: 100%;
     }
   .cards{
-    transform: translateY(30rem);
+    transform: translateY(25rem);
   }
     .container{
         padding-inline:1rem;
@@ -197,16 +195,11 @@ input[type="text"]{
     
 }
 @media screen and (max-width:320px){
-    html{
+ html{
         font-size: 45%;
     }
-    html,body{
-        padding:0;
-        margin:0;
-        overflow-x: hidden;
-        height: 100%;
-        width: 100%;
-    }
-    
+.questions-sec{
+    transform: translateY(-5rem);
+}
     
 }

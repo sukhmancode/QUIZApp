@@ -9,7 +9,7 @@ const question=document.querySelector('.question');
 const submit=document.querySelector('.btn');
 const Answers=document.querySelector('#answer');
 const greenTitle=document.querySelector('.title');
-
+const EgText=document.querySelector('.small');
 
 CardSection.forEach((card)=>{
     card.addEventListener('click',(e)=>{
@@ -22,14 +22,12 @@ CardSection.forEach((card)=>{
             windowTitle.textContent=selected;
             Questions.classList.add('active')
             greenTitle.textContent=`${windowTitle.textContent}`
+            EgText.textContent=`Example Quiz for ${windowTitle.textContent}`;
             startQuiz();
             showQuestion();
-     
-
         })
     })
     })
-
     /* Quiz Logic*/
 
     const quizDBs = {
@@ -44,6 +42,8 @@ CardSection.forEach((card)=>{
     
     let currentQuestionIdx=0;
     let score=0;
+
+    /* Functions Start Area */
     const startQuiz=()=>{
         currentQuestionIdx=0;
         score=0;
@@ -66,9 +66,8 @@ CardSection.forEach((card)=>{
             }
             button.addEventListener('click',selectanswer)
         })
-    
-    
     }
+    
     const reset = () =>{
         submit.style.display="none"
         while(Answers.firstChild){

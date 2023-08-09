@@ -9,7 +9,7 @@ html{
 }
 body{
     display: flex;
-    flex-direction: column;
+
     background-color: #f1f5f8;
     font-family: 'Hanken Grotesk', sans-serif;
   font-size: 1.8rem;
@@ -35,6 +35,13 @@ ul{
 }
 li{
     list-style: none;
+}
+.small{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    transform: translateY(0.3rem);
 }
 .question1{
     padding:2rem;
