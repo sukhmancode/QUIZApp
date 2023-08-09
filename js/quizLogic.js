@@ -1,14 +1,10 @@
-import {topic} from './script.js';
+import { windowTitle } from "./script.js";
 const question=document.querySelector('.question');
 const submit=document.querySelector('.btn');
 const Answers=document.querySelector('#answer');
 const QuizTopic=document.querySelector('.quiz-topic')
-const windowTitle=document.querySelector('.window')
 const greenTitle=document.querySelector('.title');
 
-
-
-windowTitle.textContent="Frontend"
 
 
 greenTitle.textContent=`${windowTitle.textContent}`
