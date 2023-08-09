@@ -90,6 +90,7 @@ margin-left: 6rem;
     flex-direction: column;
     gap:2rem;
     display: none;
+
 }
 .form-section.active{
     display: flex;
