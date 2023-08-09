@@ -18,6 +18,7 @@ CardSection.forEach((card)=>{
         formSection.classList.add('active');
         const selected=e.target.querySelector('.topic').textContent;
         Example.textContent=selected;
+        windowTitle.innerHTML=selected;
        
         submits.addEventListener('click',()=>{
             formSection.classList.remove('active')
@@ -53,7 +54,7 @@ CardSection.forEach((card)=>{
     
     const showQuestion = () =>{
         reset();
-        let currentQuestion=quizDBs[windowTitle.textContent][currentQuestionIdx];
+        let currentQuestion=quizDBs[windowTitle.innerHTML][currentQuestionIdx];
         let questionNo=currentQuestionIdx+1;
         question.innerHTML=questionNo+"."+currentQuestion.question;
         currentQuestion.ans.forEach(answer=>{
