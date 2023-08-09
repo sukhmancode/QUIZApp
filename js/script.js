@@ -11,25 +11,25 @@ const Answers=document.querySelector('#answer');
 const greenTitle=document.querySelector('.title');
 
 
-
 CardSection.forEach((card)=>{
     card.addEventListener('click',(e)=>{
         Card.classList.toggle('active');
         formSection.classList.add('active');
         const selected=e.target.querySelector('.topic').textContent;
         Example.textContent=selected;
-       
         submits.addEventListener('click',()=>{
             formSection.classList.remove('active')
-          
             windowTitle.textContent=selected;
             Questions.classList.add('active')
             greenTitle.textContent=`${windowTitle.textContent}`
+            startQuiz();
+            showQuestion();
+     
+
         })
     })
+    })
 
-
-})
     /* Quiz Logic*/
 
     const quizDBs = {
