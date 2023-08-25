@@ -29,15 +29,12 @@ CardSection.forEach((card)=>{
     })
     })
     /* Quiz Logic*/
-
     const quizDBs = {
-       
         "Frontend": FrontendquizDB, 
         "Backend":BackendquizDB,
         "JAVA,C++":javaquizDB,
         "MachineL":PythonquizDB, 
         "OOPs":OOPsquizDB
-    
     };
     
     let currentQuestionIdx=0;
@@ -67,7 +64,7 @@ CardSection.forEach((card)=>{
             button.addEventListener('click',selectanswer)
         })
     }
-    
+
     const reset = () =>{
         submit.style.display="none"
         while(Answers.firstChild){
@@ -81,7 +78,8 @@ CardSection.forEach((card)=>{
        if(isCorrect){
         selectedBtn.classList.add('correct');
         score++;
-       }else{
+       }
+       else{
         selectedBtn.classList.add('Incorrect')
        }
        Array.from(Answers.children).forEach(button=>{
@@ -98,19 +96,18 @@ CardSection.forEach((card)=>{
         reset();
         document.querySelector('.title').style.display="none";
         question.innerHTML=`You Scored ${score} out of ${quizDBs.Backend.length}`
-        if(score<5){
-            question.innerHTML=`You Scored ${score} out of ${quizDBs.Backend.length}
-    `
-            const p=document.createElement('p');
-            p.textContent="Better Luck Next Time! 😀"
+        if(score < 5){
+            question.innerHTML=`You Scored ${score} out of ${quizDBs.Backend.length}`    
+            const h33=document.createElement('h3');
+            h33.textContent="Better Luck Next Time! 😀"
             question.appendChild(p);
     
             submit.style.display="inline"
             submit.innerHTML= `Solve Again`
         }else{
-            question.innerHTML=`You Scored ${score} out of ${quizDBs.Backend.length} `
-            const p=document.createElement('p');
-            p.textContent=" Wow! Such a great Score 👌"
+            question.innerHTML=`You Scored ${score} out of ${quizDBs.Backend.length}`
+            const h33=document.createElement('h3');
+            h33.textContent=" Wow! Such a great Score 👌"
             question.appendChild(p);
             submit.style.display="inline"
         }
@@ -132,4 +129,3 @@ CardSection.forEach((card)=>{
         }
     })
     startQuiz();
-
